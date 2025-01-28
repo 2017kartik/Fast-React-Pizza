@@ -1,9 +1,6 @@
 // import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 // import { getAddress } from "../../services/apiGeocoding";
 
-import { useEffect } from "react";
-import { use } from "react";
-
 import { createSlice } from "@reduxjs/toolkit";
 // function getPosition() {
 //   return new Promise(function (resolve, reject) {
