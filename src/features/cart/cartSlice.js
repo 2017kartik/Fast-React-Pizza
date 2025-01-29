@@ -15,18 +15,15 @@ const cartSlice = createSlice({
       state.cart = state.cart.filter((item) => item.pizzaId !== action.payload);
     },
     increaseItem(state, action) {
-      const item = state.cart.find(
-        (item) => item.pizzaId === action.payload.pizzaId
-      );
-      item.quantity += 1;
+      const item = state.cart.find((item) => item.pizzaId === action.payload);
+      item.quantity++;
       item.totalPrice = item.quantity * item.unitPrice;
     },
     decreaseItem(state, action) {
-      const item = state.cart.find(
-        (item) => item.pizzaId === action.payload.pizzaId
-      );
-      item.quantity -= 1;
+      const item = state.cart.find((item) => item.pizzaId === action.payload);
+      item.quantity--;
       item.totalPrice = item.quantity * item.unitPrice;
+      if (item.quantity === 0) cartSlice.caseReducers.deleteItem(state, action);
     },
     clearCart(state) {
       state.cart = [];
