@@ -4,7 +4,7 @@ A pizza ordering application built with React, demonstrating modern practices li
 
 ## Live Demo
 
-You can see a live demo of the application [here](link-to-deployed-demo). (Replace `link-to-deployed-demo` with the actual deployed link, if available)
+You can see a live demo of the application [here](https://fast-react-pizza-sepia.vercel.app/).
 
 ## Features
 
