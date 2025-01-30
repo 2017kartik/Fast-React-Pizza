@@ -56,6 +56,7 @@ The project is organized into the following directories:
             *   `CreateUser.jsx`: Component to create a new user.
             *   `Username.jsx`: Component to display or update the user's name.
             *   `userSlice.js`: Redux slice for managing user state.
+
               
     *   **`services/`:** Contains code for interacting with external services or APIs.
             *   `apiGeocoding.js`: API service for interacting with a geocoding service.
