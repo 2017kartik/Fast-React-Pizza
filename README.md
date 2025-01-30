@@ -26,42 +26,52 @@ You can see a live demo of the application [here](link-to-deployed-demo). (Repla
 
 ## Project Structure
 
-fast-react-pizza/
-├── public/
-│ └── index.html
-├── src/
-│ ├── features/
-│ │ ├── cart/
-│ │ │ ├── CartItem.jsx # Component to display a single cart item.
-│ │ │ ├── CartSlice.js # Redux slice for managing cart state.
-│ │ │ └── Cart.jsx # Component to display the entire cart.
-│ │ ├── menu/
-│ │ │ ├── Menu.jsx # Component to display the pizza menu.
-│ │ │ └── Pizza.jsx # Component to display a single pizza item.
-│ │ └── user/
-│ │ └── userSlice.js # Redux slice for managing user state.
-│ ├── services/
-│ │ └── apiPizza.js # API service for fetching pizza data.
-│ ├── ui/
-│ │ ├── Button.jsx # Reusable button component.
-│ │ ├── LinkButton.jsx # Reusable link button component.
-│ │ ├── Loader.jsx # Reusable Loader component
-│ │ └── Error.jsx # Reusable error component
-│ ├── utils/
-│ │ └── helpers.js # Helper function
-│ ├── App.jsx # Main application component.
-│ ├── index.css # Global styles for the application.
-│ ├── main.jsx # Entry point of the application.
-│ ├── store.js # Redux store configuration.
-│ ├── .eslintrc.json
-│ ├── .gitignore
-│ ├── README.md
-│ ├── index.html
-│ ├── package-lock.json
-│ ├── package.json
-│ ├── postcss.config.js
-│ ├── tailwind.config.js
-│ └── vite.config.js
+The project is organized into the following directories:
+
+*   **`public/`:**
+    *   Contains static assets like `index.html`.
+
+*   **`src/`:**
+    *   Contains all the application's source code.
+
+    *   **`features/`:** Contains feature-specific code.
+        *   **`cart/`:** Manages the shopping cart functionality.
+            *   `CartItem.jsx`: Component to display a single cart item.
+            *   `CartSlice.js`: Redux slice for managing cart state.
+            *   `Cart.jsx`: Component to display the entire cart.
+        *   **`menu/`:** Manages the display of the pizza menu.
+            *   `Menu.jsx`: Component to display the pizza menu.
+            *   `Pizza.jsx`: Component to display a single pizza item.
+        *  **`user/`:** Manages user-related state.
+            *   `userSlice.js`: Redux slice for managing user state.
+
+    *   **`services/`:** Contains code for interacting with external services or APIs.
+        *    `apiPizza.js`: API service for fetching pizza data.
+
+    *   **`ui/`:** Contains reusable UI components.
+        *   `Button.jsx`: Reusable button component.
+        *   `LinkButton.jsx`: Reusable link button component.
+        *   `Loader.jsx`: Reusable loader component.
+        *   `Error.jsx`: Reusable error component.
+
+    *   **`utils/`:** Contains utility functions.
+         *  `helpers.js`: Helper functions for the application.
+
+    *   **`App.jsx`:** Main application component.
+    *   **`index.css`:** Global styles for the application.
+    *   **`main.jsx`:** Entry point of the application.
+    *   **`store.js`:** Redux store configuration.
+
+*   **Other Files (in the root directory):**
+    *   `.eslintrc.json`: Configuration file for ESLint.
+    *   `.gitignore`: Specifies intentionally untracked files that Git should ignore.
+    *   `README.md`: The file you're reading.
+    *   `index.html`: Main HTML file for the application.
+    *   `package-lock.json`: Dependency lock file.
+    *   `package.json`: Project's package configuration file.
+    *   `postcss.config.js`: Configuration file for PostCSS.
+    *   `tailwind.config.js`: Configuration file for Tailwind CSS.
+    *  `vite.config.js`: Configuration file for Vite.
 
 ## How to Run Locally
 
