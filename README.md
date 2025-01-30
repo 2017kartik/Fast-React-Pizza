@@ -59,8 +59,8 @@ The project is organized into the following directories:
 
               
     *   **`services/`:** Contains code for interacting with external services or APIs.
-            *   `apiGeocoding.js`: API service for interacting with a geocoding service.
-            *   `apiRestaurant.js`: API service for interacting with restaurant data.
+         *   `apiGeocoding.js`: API service for interacting with a geocoding service.
+         *   `apiRestaurant.js`: API service for interacting with restaurant data.
 
   
     *   **`ui/`:** Contains reusable UI components.
